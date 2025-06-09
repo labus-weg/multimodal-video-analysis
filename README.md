@@ -1,121 +1,71 @@
 # Multimodal Video Analysis System
 
-A production-ready Next.js application that enables natural language chat and visual search within YouTube videos using Gemini AI.
+A full-stack Next.js application that enables natural language chat and visual search within YouTube videos using the Gemini API.
 
 ## Features
 
-- **YouTube Video Processing**: Upload any YouTube URL for AI analysis
-- **Smart Section Breakdown**: Automatically generated timestamped sections
-- **AI Chat Interface**: Ask questions about video content with cited responses
-- **Visual Search**: Search for specific visual content within videos
-- **Real-time Navigation**: Click timestamps to jump to specific video moments
-- **Modern UI**: Dark theme with responsive design
+- **YouTube Video Processing** – Analyze any public YouTube URL
+- **Smart Section Breakdown** – Auto-generated timestamps for key segments
+- **AI Chat Interface** – Ask questions about video content with cited responses
+- **Visual Search** – Find visual content from specific parts of a video
+- **Jump-to-Timestamp** – Click timestamps to navigate the video
 
-## Deployment to Vercel (Free)
+## Tech Stack
+
+- **Frontend**: Next.js, TypeScript, Tailwind CSS  
+- **Backend**: Express.js, Node.js  
+- **AI**: Google Gemini API  
+- **Deployment**: Vercel  
+
+## Getting Started
 
 ### Prerequisites
-1. GitHub account
-2. Vercel account (free tier)
-3. Gemini API key from Google AI Studio
 
-### Steps
+- GitHub account  
+- Vercel account (free tier)  
+- Gemini API key from [Google AI Studio](https://aistudio.google.com/)
 
-1. **Push to GitHub**:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git remote add origin https://github.com/yourusername/video-analysis
-   git push -u origin main
-   ```
+### 1. Clone & Push to GitHub
 
-2. **Deploy to Vercel**:
-   - Visit [vercel.com](https://vercel.com)
-   - Sign in with GitHub
-   - Click "New Project"
-   - Import your repository
-   - Add environment variable: `GEMINI_API_KEY`
-   - Deploy
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/yourusername/video-analysis
+git push -u origin main
+````
 
-3. **Environment Variables**:
-   In Vercel dashboard → Project Settings → Environment Variables:
-   - `GEMINI_API_KEY`: Your Gemini API key
+### 2. Deploy to Vercel
 
-### Local Development
+* Go to [vercel.com](https://vercel.com)
+* Sign in with your GitHub account
+* Click **New Project** and import your repository
+* Set the environment variable:
 
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+  * `GEMINI_API_KEY=your_gemini_api_key`
+* Click **Deploy**
 
-2. **Set environment variables**:
-   Create `.env.local`:
-   ```
-   GEMINI_API_KEY=your_gemini_api_key_here
-   ```
+## Local Development
 
-3. **Run development server**:
-   ```bash
-   npm run dev
-   ```
-
-## Technology Stack
-
-- **Frontend**: React, TypeScript, Tailwind CSS, shadcn/ui
-- **Backend**: Express.js, Node.js
-- **AI**: Google Gemini API
-- **Build**: Vite
-- **Deployment**: Vercel
-
-## API Endpoints
-
-- `POST /api/videos/process` - Process YouTube video
-- `GET /api/videos/:id` - Get video details
-- `POST /api/videos/:id/chat` - Chat with video content
-- `GET /api/videos/:id/messages` - Get chat history
-- `POST /api/videos/:id/search` - Visual search
-
-## Project Structure
-
-```
-├── client/                 # React frontend
-│   ├── src/
-│   │   ├── components/     # UI components
-│   │   ├── pages/          # Application pages
-│   │   ├── lib/            # Utilities and API client
-│   │   └── types/          # TypeScript definitions
-├── server/                 # Express backend
-│   ├── index.ts           # Server entry point
-│   ├── routes.ts          # API routes
-│   ├── storage.ts         # In-memory storage
-│   └── vite.ts            # Vite integration
-├── shared/                # Shared types and schemas
-└── vercel.json           # Vercel deployment config
+```bash
+npm install
 ```
 
-## Core Features Explained
+Create a `.env.local` file in the root:
 
-### Video Processing
-- Extracts YouTube video metadata and transcripts
-- Uses Gemini AI to analyze content and create logical sections
-- Generates timestamped navigation points
+```
+GEMINI_API_KEY=your_gemini_api_key
+```
 
-### AI Chat
-- Contextual responses based on video content
-- Automatic citation generation with timestamps
-- Real-time message exchange
+Start the development server:
 
-### Visual Search
-- Search for specific visual elements in videos
-- Thumbnail-based result display
-- Direct navigation to relevant timestamps
+```bash
+npm run dev
+```
+#Courtesy
+Credits
 
-## Free Deployment Benefits
+1. Hassan Syed for the challenge
+2. Headstarter AI (Yasin Ehsan & Faizan Ahmed) for the platform and tech support
 
-- **Vercel Free Tier**: 100GB bandwidth, unlimited personal projects
-- **Serverless Functions**: Automatic scaling, pay-per-use
-- **Global CDN**: Fast worldwide access
-- **HTTPS**: Built-in SSL certificates
-- **GitHub Integration**: Automatic deployments on push
-
-This system is production-ready and can handle real-world traffic on Vercel's free tier.
+Nafisa Nawrin Labonno
