@@ -62,8 +62,7 @@ Start the development server:
 ```bash
 npm run dev
 ```
-#Courtesy
-Credits
+# Courtesy
 
 1. [Hassan Syed](https://www.linkedin.com/in/hassan-syed-b166a9171/) for the challenge
 2. [Headstarter AI](https://app.headstarter.co/accelerator) ([Yasin Ehsan](https://www.linkedin.com/in/yasinehsan/) & [Faizan Ahmed](https://www.linkedin.com/in/faizancodes/) for the platform and tech support
