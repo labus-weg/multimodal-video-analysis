@@ -65,7 +65,7 @@ npm run dev
 #Courtesy
 Credits
 
-1. Hassan Syed for the challenge
-2. Headstarter AI (Yasin Ehsan & Faizan Ahmed) for the platform and tech support
+1. [Hassan Syed]([url](https://www.linkedin.com/in/hassan-syed-b166a9171/)) for the challenge
+2. [Headstarter AI]([url](https://app.headstarter.co/accelerator)) ([Yasin Ehsan]([url](https://www.linkedin.com/in/yasinehsan/)) & [Faizan Ahmed]([url](https://www.linkedin.com/in/faizancodes/))) for the platform and tech support
 
-Nafisa Nawrin Labonno
+[Nafisa Nawrin Labonno]([url](https://www.linkedin.com/in/nafisanlab/))
